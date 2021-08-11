@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #808080;
+}
+
+header{ 
+    width: 100vw;
+    height: 15vh;
+    border: 1px solid #808080;
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:auto;
+    background-color: #f8f6f6;
+}
+
+h1{
+    font-size: 25px;
+}
+
+#logo{
+    width: 30%;
+    margin: 0 auto;
+}
+
+#logo img{
+    width: 100%; 
+}
+
+nav ul{ 
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin:17px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+nav ul li a{
+    color: #808080;
+    text-decoration: none;
+}
+
+nav ul li a h1{
+    border-bottom: 1px solid #126577;
+}
+
+section{
+    width: 100%;
+    border: solid 1px lightgray;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
+    grid-gap: 2vw;
+}
+
+.container-flex{
+    display: flex;
+}
+
+section div{ 
+    grid-column: span 6;
+
+}
+
+#sobre h1{
+    margin-top: 15vh;
+}
+
+#sobre div div {
+    width: 50%;
+    float: left;
+    padding: 3px;
+    align-self: flex-end;
+ }
+ #sobre div p{
+    margin: 2px;
+    font-size: 20px;
+    text-align: center;
+ }
+
+ #sobre div div img{
+     width: 90%;
+     border: solid 1px #808080;
+ }
+
+#d-cursos div{
+    width: 80vw;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+ #cursos div img{
+    width: 70vw;
+    text-align: center;
+ }
+
+ #h1-cursos {
+     padding-top: 2vh 0 2vh 0;
+     color: #808080;
+ }
+
+ #cursos h2{
+     background-color: lightgray;
+ }
+ #curso-wd{
+    border-top: 3vh solid red;
+    text-align: center;
+ }
+
+ #curso-prog{
+ 
+    border-top: 3vh solid  #0f0;
+}
+
+#curso-bd{
+
+    border-top: 3vh solid #00f;
+}
+
+#planos {
+    width: 80vw;
+    margin-left: 30px;
+    margin-top: 5px;
+} 
+
+#bronze {
+    background-color: brown;
+}
+
+#bronze h2{
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid darkgray;
+    border-top: 2vh solid brown;
+}
+
+#bronze p{
+    background-color: white;
+    border-bottom: 2vh solid brown;
+    text-align: center;
+}
+
+#prata {
+    background-color: darkgray;
+}
+
+#prata h2{
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid darkgray;
+    border-top: 2vh solid darkgray;
+}
+
+#prata p{
+    background-color: white;
+    border-bottom: 2vh solid darkgray;
+    text-align: center;
+}
+#ouro {
+    background-color: yellow;
+}
+
+#ouro h2{
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid yellow;
+    border-top: 2vh solid yellow;
+}
+
+#ouro p{
+    background-color: white;
+    border-bottom: 2vh solid yellow;
+    text-align: center;
+}
+
+
+
+
+#qualidade1 {
+    margin-top: 10px
+}
+
+#eficiencia {
+    margin-top: 10px
+}
+
+#compromisso {
+    margin-top: 10px
+}
+
+#inovacao {
+    margin-top: 10px
+}
+
+#pesquisa {
+    margin-top: 10px
+}
+
+#qualidade {
+    margin-top: 10px
+}
+
+#qualidade1 h2{
+    border-left: 5px solid red;
+}
+
+#eficiencia h2{
+    border-left: 5px solid blue;
+}
+
+#inovacao h2{
+    border-left: 5px solid green;
+}
+
+#pesquisa h2{
+    border-left: 5px solid yellow;
+}
+
+#qualidade h2{
+    border-left: 5px solid orange;
+}
+
+#compromisso h2{
+    border-left: 5px solid pink;
+}
+
+
+ @media  only screen and (min-width: 1024px){
+ 
+
+    .d-container{
+        display:grid;
+    }
+    
+    header{
+        width: 100%;
+        height:90px;;
+    }
+
+
+     #logo{
+         grid-column: 1/2;
+         margin: 0;
+         margin-top: 20px;
+     }
+
+     #logo img{
+        width: 100%;
+     }
+
+    nav{
+        grid-column: 3/6;
+        padding-top: 35px;
+    }
+    
+    h1{
+        padding-top: 90px;
+    }
+
+    section div{
+        grid-column: span 2;
+    }
+
+    
+
+    #sobre p{
+       
+    }
+
+    #sobre div{
+        grid-column: span 3;
+    }
+
+    #d-cursos div{
+        grid-template-columns: 10px 10px 10px ;
+    }
+    
+     #cursos div img{
+        width: 20vh;;
+        text-align: center;
+     }
+    
+     #h1-cursos {
+         padding-top: 2vh 0 2vh 0;
+         color: #808080;
+     }
+    
+     #cursos h2{
+         background-color: lightgray;
+     }
+     #curso-wd{
+        border-top: 3vh solid red;
+        text-align: center;
+        width: 20vh;
+     }
+    
+     #curso-prog{
+     
+        border-top: 3vh solid  #0f0;
+    }
+    
+    #curso-bd{
+    
+        border-top: 3vh solid #00f;
+    }
+}
+
